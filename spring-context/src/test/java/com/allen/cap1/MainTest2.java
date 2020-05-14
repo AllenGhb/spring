@@ -1,5 +1,7 @@
 package com.allen.cap1;
 
+import com.allen.cap1.bean.User;
+import com.allen.cap1.bean.User2;
 import com.allen.cap1.config.MainConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -24,6 +26,12 @@ public class MainTest2 {
         for(String name : namesForBean){
             System.out.println(name);
         }
+
+		/*User user=context.getBean(User.class);
+		System.out.println(String.format("实现了BeanNameAware接口的信息BeanId=%s,所有信息=%s",user.getId(),user.toString()));
+
+		User2 user2=context.getBean(User2.class);
+		System.out.println(String.format("未实现BeanNameAware接口的信息BeanId=%s,所有信息=%s",user2.getId(),user2.toString()));*/
 
     }
 

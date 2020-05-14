@@ -9,4 +9,14 @@
     </bean>
 	<alias name="person" alias="allen"></alias>
 
+	<bean id="allen"  class="com.allen.cap1.bean.User">
+		<property name="name" value="allen"></property>
+		<property name="age" value="18"></property>
+	</bean>
+
+	<bean id="buguoduan"  class="com.allen.cap1.bean.User2">
+		<property name="name" value="buguoduan"></property>
+		<property name="age" value="24"></property>
+	</bean>
+
 </beans>
