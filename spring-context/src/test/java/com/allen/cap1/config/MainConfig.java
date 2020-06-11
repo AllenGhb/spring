@@ -16,7 +16,7 @@ public class MainConfig {
      * 给容器中注册一个bean
      * @author 周何圳 2020年03月20日 新建
      */
-    @Bean(name = {"personName","allen","buguoduan"})
+    @Bean(name = {"personName"})
     public Person person(){
         return new Person("allen",19);
     }

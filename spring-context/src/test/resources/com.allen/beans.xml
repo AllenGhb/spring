@@ -3,13 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person" class="com.allen.cap1.Person">
+    <bean  class="com.allen.cap1.Person">
         <property name="name" value="allen" ></property>
         <property name="age" value="18"></property>
     </bean>
-	<alias name="person" alias="allen"></alias>
 
-	<bean id="allen"  class="com.allen.cap1.bean.User">
+	<!--<bean id="allen"  class="com.allen.cap1.bean.User">
 		<property name="name" value="allen"></property>
 		<property name="age" value="18"></property>
 	</bean>
@@ -17,6 +16,6 @@
 	<bean id="buguoduan"  class="com.allen.cap1.bean.User2">
 		<property name="name" value="buguoduan"></property>
 		<property name="age" value="24"></property>
-	</bean>
+	</bean>-->
 
 </beans>

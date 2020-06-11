@@ -54,6 +54,8 @@ import org.springframework.lang.Nullable;
  * @since 16 April 2001
  * @see HierarchicalBeanFactory
  * @see BeanFactoryUtils
+ * ApplicationContext 继承了 ListableBeanFactory,
+ * 通过这个接口，我们可以获取多个 Bean,最顶层 BeanFactory 接口的方法都是获取单个 Bean 的
  */
 public interface ListableBeanFactory extends BeanFactory {
 

@@ -19,8 +19,6 @@ public class MainTest2 {
         // 从容器中获取值
         Person person = (Person) context.getBean("personName");
         System.out.println(person);
-		Person person1 = (Person) context.getBean("personName");
-		System.out.println(person1);
 
         String[] namesForBean = context.getBeanNamesForType(Person.class);
         for(String name : namesForBean){
